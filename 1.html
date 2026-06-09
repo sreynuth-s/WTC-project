@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GlowSkin - Premium Skincare</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+<style>
+.hero{background:linear-gradient(135deg,#f8d7da 0%,#fce4ec 50%,#f3e5f5 100%);color:#222;padding:6rem 0 5rem}
+.feature-icon{width:3rem;height:3rem;border-radius:.75rem;display:flex;align-items:center;justify-content:center;background:#ffe5ec;color:#ff4d6d;font-size:1.5rem}
+.btn-primary{background:#ff4d6d;border-color:#ff4d6d}
+.text-primary{color:#ff4d6d!important}
+html{scroll-behavior:smooth}
+.product-card img{height:220px;object-fit:cover}
+</style>
+</head>
+<body>
+ 
+<nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom sticky-top">
+<div class="container">
+<a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+<i class="bi bi-droplet-fill text-primary"></i><span class="fw-bold">GlowSkin</span>
+</a>
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="mainNav">
+<ul class="navbar-nav ms-auto align-items-center">
+<li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+<li class="nav-item"><a href="#product" class="nav-link">Products</a></li>
+<li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+<li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+<li class="nav-item ms-2"><button class="btn btn-outline-primary"><i class="bi bi-cart"></i> <span id="cartCount">0</span></button></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<header id="home" class="hero">
+<div class="container">
+<div class="row align-items-center g-4">
+<div class="col-lg-7">
+<h1 class="display-5 fw-bold">Reveal Your Natural Glow</h1>
+<p class="lead">Premium skincare products designed to nourish, hydrate and protect your skin every day.</p>
+<div class="d-flex gap-2 mt-4">
+<a href="#product" class="btn btn-light btn-lg">Shop Now</a>
+<a href="#about" class="btn btn-outline-dark btn-lg">Learn More</a>
+</div>
+<div class="d-flex flex-wrap gap-3 mt-4">
+<span class="badge text-bg-light">🌿 Natural Ingredients</span>
+<span class="badge text-bg-light">🧴 Dermatologist Tested</span>
+<span class="badge text-bg-light">♻ Cruelty Free</span>
+</div>
+</div>
+<div class="col-lg-5">
+<div class="bg-white rounded-4 p-4 shadow">
+<div class="d-flex gap-3 mb-3"><span class="feature-icon"><i class="bi bi-droplet"></i></span><div><div class="fw-semibold">Deep Hydration</div><small>Long-lasting moisture</small></div></div>
+<div class="d-flex gap-3 mb-3"><span class="feature-icon"><i class="bi bi-flower1"></i></span><div><div class="fw-semibold">Natural Formula</div><small>Botanical ingredients</small></div></div>
+<div class="d-flex gap-3"><span class="feature-icon"><i class="bi bi-stars"></i></span><div><div class="fw-semibold">Visible Results</div><small>Brighter smoother skin</small></div></div>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+<section class="py-5 bg-light">
+<div class="container"><div class="row text-center">
+<div class="col-md-3"><h2 class="text-primary fw-bold">10K+</h2><p>Customers</p></div>
+<div class="col-md-3"><h2 class="text-primary fw-bold">120+</h2><p>Products</p></div>
+<div class="col-md-3"><h2 class="text-primary fw-bold">98%</h2><p>Reviews</p></div>
+<div class="col-md-3"><h2 class="text-primary fw-bold">24/7</h2><p>Support</p></div>
+</div></div>
+</section>
+
+<section id="product" class="py-5">
+<div class="container">
+<div class="text-center mb-5">
+<h2 class="fw-bold">Featured Products</h2>
+<p class="text-muted">Discover our skincare essentials.</p>
+</div>
+
+<div class="row mb-4"><div class="col-md-6 mx-auto">
+<div class="input-group">
+<span class="input-group-text"><i class="bi bi-search"></i></span>
+<input id="searchInput" class="form-control" placeholder="Search products">
+</div></div></div>
+
+<div class="d-flex justify-content-center gap-2 mb-4">
+<button class="btn btn-outline-primary btn-sm filter-btn" data-filter="all">All</button>
+<button class="btn btn-outline-secondary btn-sm filter-btn" data-filter="serum">Serum</button>
+<button class="btn btn-outline-secondary btn-sm filter-btn" data-filter="cleanser">Cleanser</button>
+<button class="btn btn-outline-secondary btn-sm filter-btn" data-filter="moisturizer">Moisturizer</button>
+<button class="btn btn-outline-secondary btn-sm filter-btn" data-filter="sunscreen">Sunscreen</button>
+</div>
+
+<div class="row g-4">
+<div class="col-sm-6 col-lg-3 product-card" data-category="serum">
+<div class="card h-100 shadow-sm">
+<img class="card-img-top" src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=600&q=80">
+<div class="card-body d-flex flex-column"><h5>Vitamin C Serum</h5><p class="text-muted">Brightens and evens skin tone.</p><div class="mt-auto d-flex justify-content-between"><span>$29</span><button class="btn btn-primary btn-sm add-cart">Add</button></div></div>
+</div></div>
+
+<div class="col-sm-6 col-lg-3 product-card" data-category="moisturizer">
+<div class="card h-100 shadow-sm">
+<img class="card-img-top" src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=600&q=80">
+<div class="card-body d-flex flex-column"><h5>Hydrating Moisturizer</h5><p class="text-muted">Deep nourishment for all skin types.</p><div class="mt-auto d-flex justify-content-between"><span>$24</span><button class="btn btn-primary btn-sm add-cart">Add</button></div></div>
+</div></div>
+
+<div class="col-sm-6 col-lg-3 product-card" data-category="cleanser">
+<div class="card h-100 shadow-sm">
+<img class="card-img-top" src="https://images.unsplash.com/photo-1619451334792-150fd785ee74?auto=format&fit=crop&w=600&q=80">
+<div class="card-body d-flex flex-column"><h5>Gentle Cleanser</h5><p class="text-muted">Removes dirt and excess oil gently.</p><div class="mt-auto d-flex justify-content-between"><span>$18</span><button class="btn btn-primary btn-sm add-cart">Add</button></div></div>
+</div></div>
+
+<div class="col-sm-6 col-lg-3 product-card" data-category="sunscreen">
+<div class="card h-100 shadow-sm">
+<img class="card-img-top" src="https://images.unsplash.com/photo-1598662957563-ee4965d4d72c?auto=format&fit=crop&w=600&q=80">
+<div class="card-body d-flex flex-column"><h5>SPF 50 Sunscreen</h5><p class="text-muted">Protects skin from UV damage.</p><div class="mt-auto d-flex justify-content-between"><span>$22</span><button class="btn btn-primary btn-sm add-cart">Add</button></div></div>
+</div></div>
+</div>
+</div>
+</section>
+
+<section id="about" class="py-5 bg-light">
+<div class="container">
+<div class="row g-4 align-items-center">
+<div class="col-lg-6">
+<h2 class="fw-bold">About GlowSkin</h2>
+<p class="text-muted">GlowSkin combines nature and science to create skincare products that help you achieve healthy radiant skin.</p>
+</div>
+<div class="col-lg-6">
+<div class="card shadow-sm">
+<div class="card-header bg-white">Our Values</div>
+<div class="card-body">
+<ul class="list-unstyled mb-0">
+<li>✓ Natural Ingredients</li>
+<li>✓ Cruelty Free</li>
+<li>✓ Dermatologist Tested</li>
+<li>✓ Sustainable Packaging</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-5 bg-light">
+<div class="container">
+<h2 class="text-center fw-bold mb-5">Customer Reviews</h2>
+<div class="row g-4">
+<div class="col-md-4"><div class="card"><div class="card-body">★★★★★<p>My skin became smoother after only two weeks.</p><strong>Emma</strong></div></div></div>
+<div class="col-md-4"><div class="card"><div class="card-body">★★★★★<p>Amazing hydration and fast delivery.</p><strong>Sophia</strong></div></div></div>
+<div class="col-md-4"><div class="card"><div class="card-body">★★★★★<p>Best sunscreen I've used.</p><strong>Chloe</strong></div></div></div>
+</div>
+</div>
+</section>
+
+<section id="contact" class="py-5">
+<div class="container">
+<h2 class="text-center fw-bold mb-5">Contact Us</h2>
+<form id="contactForm" class="row g-3">
+<div class="col-md-6"><input class="form-control" placeholder="Full Name" required></div>
+<div class="col-md-6"><input type="email" class="form-control" placeholder="Email" required></div>
+<div class="col-12"><input class="form-control" placeholder="Subject" required></div>
+<div class="col-12"><textarea class="form-control" rows="4" placeholder="Message" required></textarea></div>
+<div class="col-12"><button class="btn btn-primary">Send Message</button></div>
+</form>
+</div>
+</section>
+
+<section class="py-5 text-white" style="background:linear-gradient(135deg,#ff4d6d,#ff8fa3)">
+<div class="container text-center">
+<h2>Get 10% Off Your First Order</h2>
+<p>Subscribe for skincare tips and promotions.</p>
+<div class="row justify-content-center"><div class="col-md-6">
+<div class="input-group">
+<input id="newsletterEmail" class="form-control" placeholder="Email">
+<button id="subscribeBtn" class="btn btn-dark">Subscribe</button>
+</div></div></div>
+</div>
+</section>
+
+<footer class="py-4 bg-dark text-light">
+<div class="container d-flex justify-content-between">
+<div>© 2025 GlowSkin</div>
+<a href="#home" class="text-light">Back to top</a>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+let cart=0;
+document.querySelectorAll('.add-cart').forEach(btn=>{
+btn.addEventListener('click',()=>{
+cart++;
+document.getElementById('cartCount').textContent=cart;
+alert('Added to cart!');
+});
+});
+
+document.getElementById('searchInput').addEventListener('keyup',function(){
+let value=this.value.toLowerCase();
+document.querySelectorAll('.product-card').forEach(card=>{
+card.style.display=card.innerText.toLowerCase().includes(value)?'block':'none';
+});
+});
+
+document.querySelectorAll('.filter-btn').forEach(btn=>{
+btn.addEventListener('click',()=>{
+let filter=btn.dataset.filter;
+document.querySelectorAll('.product-card').forEach(card=>{
+card.style.display=(filter==='all'||card.dataset.category===filter)?'block':'none';
+});
+});
+});
+
+document.getElementById('contactForm').addEventListener('submit',function(e){
+e.preventDefault();
+alert('Message sent successfully!');
+this.reset();
+});
+
+document.getElementById('subscribeBtn').addEventListener('click',()=>{
+if(document.getElementById('newsletterEmail').value){
+alert('Thank you for subscribing!');
+}
+});
+</script>
+</body>
+</html>
